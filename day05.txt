@@ -1,0 +1,27 @@
+[table]
+
+테이블 > 행 > 칸
+
+table : 테이블
+tr : 행, 가로줄
+th : 제목셀
+   : scope 반드시 추가
+td : 칸, 셀
+
+row : 가로
+col : 세로
+
+border : 테두리
+cellpadding : 셀의 안쪽 여백
+cellspacing : 셀 간격 
+
+thead
+tfoot
+tbody
+
+colspan   :  기준셀의 오른쪽에 있는 셀과 병합
+rowspan  :  기준셀의 아래쪽에 있는 셀과 병합
+
+
+
+

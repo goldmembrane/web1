@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>table</title>
+	</head>
+	<body>
+		<table border="1" cellpadding="0" cellspacing="0" width="900" 
+			   summary="구분, 월, 수, 금으로 이루어진 시간표">
+		
+			<caption>시간표</caption>
+			
+			<colgroup>
+				<col width="300">
+				<col width="200">
+				<col width="200">
+				<col width="200">
+			</colgroup>			
+			
+			<thead>
+				<tr>
+					<th scope="col">구분</th>
+					<th scope="col">월</th>
+					<th scope="col">수</th>
+					<th scope="col">금</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<th scope="row">총시간</th>
+					<td>10시간</td>
+					<td>11시간</td>
+					<td></td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<th scope="row">1교시</th>
+					<td colspan="2">국어</td>
+					<td>영어</td>
+				</tr>
+				<tr>
+					<th scope="row">2교시</th>
+					<td>수학</td>
+					<td colspan="2" rowspan="2">영어</td>
+				</tr>
+				<tr>
+					<th scope="row">3교시</th>
+					<td>영어</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
