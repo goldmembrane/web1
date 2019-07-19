@@ -1,0 +1,49 @@
+<a href="#" target="_blank" title="새창"> 
+
+[style 입력법]
+
+<태그  속성="속성값">
+<img width="100" height="100">
+
+선택자  {   속성:속성값;   }
+img {width:100px; height:100px; }
+
+
+[선택자]
+- 태그 선택자 : 
+  p {color:red;}
+
+- id 선택자 
+  : 중복 사용이 불가능
+  : 태그의 이름을 지정하기 위한 용도로 주로 사용
+  #box {}
+
+- class 선택자
+  : 중복 사용이 가능
+  : 태그를 이쁘게 꾸미기 위한 용도
+  .box {}
+
+
+
+[color]
+- color명 사용 : red, green, blue ......
+
+- hex code 사용 : 0~f
+  #000000  
+  #red green blue
+  #000000 : 검은색 #000   
+  #ffffff : 흰색 #fff
+  #ff0000 : 빨간색 #f00
+
+- rgb()  
+  rgb(red,green,blue)  0~255
+  rgb(0,0,0) : 검은색
+  rgb(255,255,255) : 흰색
+
+
+
+
+
+
+
+
