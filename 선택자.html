@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>선택자</title>
+		<style>
+			ul, li{list-style:none;}
+			.list > li{
+				background-color:pink;
+				width:200px;
+			}
+			.sub ~ p {
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="list">
+			<li>list01</li>
+			<li>list02
+				<p>text</p>
+				<ul class="sub">
+					<li>sub01</li>
+					<li>sub02</li>
+					<li>sub03</li>
+					<li>sub04</li>
+					<li>sub05</li>
+				</ul>
+				<p>text</p>
+				<p>text</p>
+				<p>text</p>
+				<p>text</p>
+			</li>
+			<li>list03</li>
+			<li>list04</li>
+			<li>list05</li>
+		</ul>
+	</body>
+</html>
