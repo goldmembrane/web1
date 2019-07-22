@@ -1,0 +1,86 @@
+
+***** 태그의 전체 사이즈 : width/height + padding + border
+
+[태그의 가로 사이즈를 구하기]
+예 - width:50px; padding:10px; border:10px;
+  : 50 + 20 + 20 = 90
+
+1. width:100px; padding:20px; border:3px solid #ddd;
+  : 100 + 40 + 6  = 146
+
+2. width:135px; padding:10px 0; border:5px solid #ddd;
+  : 135 + 0 + 10 = 145
+
+3. width:155px; padding-right:5px; border-left:3px solid #ddd;
+  : 155 + 5 + 3 = 163
+
+4. width:158px; padding-top:33px; border-right:2px solid #ddd; border-bottom:1px solid #ddd; 
+  : 158 + 0 + 2 + 0 = 160
+
+5. width:173px; padding:50px; margin:10px; border:5px solid #ddd;
+  : 173 + 100 + 0 + 10 = 283
+
+
+[block과 inline의 차이]
+block
+  : div, p, ul, ol, li, dl, dt, dd, h1~h6 ....
+  : 태그가 줄바꿈되어 추가된다.
+  : 기본 width가 100%로 설정
+
+inline
+  : span, strong, em, a, label ....
+  : 왼쪽정렬되어 추가된다.
+  : 기본 width값이 사라진다.
+  : width/height를 지정할 수 없다.
+  : margin-top, margin-bottom, padding-top, padding-bottom X
+  : margin과 padding은 첫줄과 마지막줄만 지정된다.
+
+
+  inline -> block    : display:block;
+  block -> inline    : display:inline;
+  inline + block      : display:inline-block;
+
+ 
+[선택자]
+- 전체선택자 : 존재하는 모든 태그를 꾸밀 때 사용
+  * {margin:0; padding:0;}
+
+- tag선택자
+  p {color:red;}
+
+- id선택자
+  : 중복 사용이 불가능하다.
+  : 태그에 이름을 지정하기 위한 용도
+  #list {}
+
+- class선택자
+  : 스타일을 지정하기 위한 선택자
+  : 중복 사용이 가능하다.
+  .list {}
+
+- 복합(다중)선택자
+  ul,ol,li {list-style:none;}
+
+- 후손선택자 : list 안에 있는 모든 li
+  .list li {}
+
+- 자손(자식)선택자 : list 한수준 아래있는 li
+  .list > li {}
+
+- 형제선택자
+  .sub + p {}  : sub 다음에 있는 p 하나
+  .sub ~ p {}  : sub 다음에 있는 모든 p
+  
+- 반응선택자
+
+- 구조선택자
+
+
+
+
+
+
+
+
+
+
