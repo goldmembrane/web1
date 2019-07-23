@@ -12,9 +12,22 @@
 			.sub ~ p {
 				color:red;
 			}
+			a:link {color:pink;}
+			a:visited {color:skyblue;}
+			a:hover {color:gold;}
+			a:active {color:green;}
+			
+			.sub li:hover {background-color:gray;}
+			.sub li:active {background-color:green;}
+			
+			.sub li:first-child {background-color:red;}
+			.sub li:last-child {background-color:blue;}
+			.sub li:nth-child(2n+1) {background-color:gold;}
+			.sub li:nth-last-child(3) {background-color:skyblue;}
 		</style>
 	</head>
 	<body>
+		<a href="#">a태그</a>
 		<ul class="list">
 			<li>list01</li>
 			<li>list02
@@ -25,6 +38,11 @@
 					<li>sub03</li>
 					<li>sub04</li>
 					<li>sub05</li>
+					<li>sub06</li>
+					<li>sub07</li>
+					<li>sub08</li>
+					<li>sub09</li>
+					<li>sub10</li>
 				</ul>
 				<p>text</p>
 				<p>text</p>
