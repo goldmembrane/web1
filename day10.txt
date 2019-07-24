@@ -1,46 +1,4 @@
 
-***** 태그의 전체 사이즈 : width/height + padding + border
-
-[태그의 가로 사이즈를 구하기]
-예 - width:50px; padding:10px; border:10px;
-  : 50 + 20 + 20 = 90
-
-1. width:100px; padding:20px; border:3px solid #ddd;
-  : 100 + 40 + 6  = 146
-
-2. width:135px; padding:10px 0; border:5px solid #ddd;
-  : 135 + 0 + 10 = 145
-
-3. width:155px; padding-right:5px; border-left:3px solid #ddd;
-  : 155 + 5 + 3 = 163
-
-4. width:158px; padding-top:33px; border-right:2px solid #ddd; border-bottom:1px solid #ddd; 
-  : 158 + 0 + 2 + 0 = 160
-
-5. width:173px; padding:50px; margin:10px; border:5px solid #ddd;
-  : 173 + 100 + 0 + 10 = 283
-
-
-[block과 inline의 차이]
-block
-  : div, p, ul, ol, li, dl, dt, dd, h1~h6 ....
-  : 태그가 줄바꿈되어 추가된다.
-  : 기본 width가 100%로 설정
-
-inline
-  : span, strong, em, a, label ....
-  : 왼쪽정렬되어 추가된다.
-  : 기본 width값이 사라진다.
-  : width/height를 지정할 수 없다.
-  : margin-top, margin-bottom, padding-top, padding-bottom X
-  : margin과 padding은 첫줄과 마지막줄만 지정된다.
-
-
-  inline -> block    : display:block;
-  block -> inline    : display:inline;
-  inline + block      : display:inline-block;
-
- 
 [선택자]
 - 전체선택자 : 존재하는 모든 태그를 꾸밀 때 사용
   * {margin:0; padding:0;}
@@ -72,8 +30,52 @@ inline
   .sub ~ p {}  : sub 다음에 있는 모든 p
   
 - 반응선택자
+  a:link {}      : 링크가 걸렸을 때
+  a:visited {}  : 링크를 클릭한 후
+  a:hover {}   : 마우스를 올렸을 때
+  a:active {}  : 클릭하고 있을 때
+  *** link와 visited는 a태그에만 적용이 가능
+  *** 위 두개는 실무에서는 잘 사용하지 않는다.
 
 - 구조선택자
+  *** css3 : 하위 브라우저(ie7,8 / 일부 ie10)에서 적용X
+
+  li:first-child  : 첫번째 li
+  li:last-child  : 마지막 li
+  li:nth-child(3)   : 3번째 li
+  li:nth-child(3n)   : 3의 배수
+  li:nth-child(2n)   : 짝수 (even)
+  li:nth-child(2n-1)  : 홀수 (odd)
+  li:nth-last-child(3)   : 뒤에서 3번째 li
+
+
+
+[style]
+ - 위에서 아래, 왼쪽에서 오른쪽 순서로 적용
+ 
+!important > 엘리먼트 스타일 > id(100) > class(10) > tag(1)
+
+
+
+[img]
+[css]
+[js]
+index.html
+
+[css]
+
+reset.css   : 초기화 스타일
+common.css   : 공통 스타일
+main.css   : 메인페이지 관련 스타일
+style.css   : 그외 스타일
+sub.css
+table.css
+font.css
+.......
+
+
+
+
 
 
 
