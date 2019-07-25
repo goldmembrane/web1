@@ -1,0 +1,27 @@
+* {
+	margin:0; padding:0;
+}
+ul,ol,li {
+	list-style:none;
+}
+a {
+	text-decoration:none; color:#000
+}
+
+.list {
+	margin:100px;
+	width:200px;
+}
+
+.list li {}
+
+.list li a {
+	display:block;
+	line-height:40px;
+	padding-left:30px;
+	background:url(../img/arr2.png) no-repeat #fed 10px 15px;
+}
+
+.list li a:hover {
+	background-position:10px -25px;
+}

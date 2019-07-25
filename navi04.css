@@ -1,0 +1,54 @@
+* {
+	margin:0; padding:0;
+}
+ul,ol,li {
+	list-style:none;
+}
+a {
+	text-decoration:none; color:#000
+}
+
+.list {
+	margin:100px;
+	width:200px;
+}
+
+.list li {height:40px;}
+.list li a {
+	display:block;
+	height:40px;
+	background:url(../img/gnb1.png) no-repeat #fed 20px 0;
+}
+.list li a:hover{
+	background-color:#999;
+}
+.list .m1 a{
+	background-position:20px 0;
+}
+.list .m1 a:hover{
+	background-position:20px -200px;
+}
+.list .m2 a{
+	background-position:20px -40px;
+}
+.list .m2 a:hover{
+	background-position:20px -240px;
+}
+.list .m3 a{
+	background-position:20px -80px;
+}
+.list .m3 a:hover{
+	background-position:20px -280px;
+}
+.list .m4 a{
+	background-position:20px -120px;
+}
+.list .m4 a:hover{
+	background-position:20px -320px;
+}
+.list .m5 a{
+	background-position:20px -160px;
+}
+.list .m5 a:hover{
+	background-position:20px -360px;
+}

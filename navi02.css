@@ -1,0 +1,21 @@
+* {margin:0;padding:0;}
+ul,ol,li {list-style:none;}
+a {text-decoration:none; color:#333}
+
+.list {
+	margin:100px;
+	width:200px;
+}
+
+.list li {}
+.list li a {
+	display:block;
+	line-height:40px;
+	padding-left:30px;
+	background:url(../img/arr1.png) no-repeat;
+	background-color:#edf;
+	background-position:10px center;
+}
+.list li a:hover {
+	background-image:url(../img/arr1_red.png);
+}
