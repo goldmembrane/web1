@@ -1,0 +1,59 @@
+* {
+	margin:0; padding:0;
+}
+ul,ol,li {
+	list-style:none;
+}
+a {
+	text-decoration:none; color:#000
+}
+
+.list {
+	margin:100px;
+	width:200px;
+}
+
+.list li {
+	background:url(../img/arr2.png) no-repeat 10px 15px #fed;
+}
+.list li a {
+	display:block;
+	height:40px;
+	background:url(../img/gnb1.png) no-repeat 20px 0;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+.list li:hover{
+	background-position:10px -25px;
+	background-color:#333;
+}
+.list .m1 a{
+	background-position:20px 0;
+}
+.list .m1 a:hover{
+	background-position:20px -200px;
+}
+.list .m2 a{
+	background-position:20px -40px;
+}
+.list .m2 a:hover{
+	background-position:20px -240px;
+}
+.list .m3 a{
+	background-position:20px -80px;
+}
+.list .m3 a:hover{
+	background-position:20px -280px;
+}
+.list .m4 a{
+	background-position:20px -120px;
+}
+.list .m4 a:hover{
+	background-position:20px -320px;
+}
+.list .m5 a{
+	background-position:20px -160px;
+}
+.list .m5 a:hover{
+	background-position:20px -360px;
+}
