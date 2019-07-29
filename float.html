@@ -8,6 +8,8 @@
 			.wrap {
 				width:480px;
 				margin:0 auto;
+				background-color:gray;
+				border:5px solid #000;
 			}
 			.box {
 				width:100px;
@@ -15,6 +17,11 @@
 				margin:10px;
 				background-color:#fed;
 				float:left;
+			}
+			.wrap:after {
+				content:"";
+				clear:both;
+				display:block;
 			}
 		</style>
 	</head>
