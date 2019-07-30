@@ -1,0 +1,28 @@
+* {
+	margin:0; padding:0;
+}
+#wrap {
+	width:954px;
+	margin:0 auto;
+	border:3px solid #13d;
+}
+#header {
+	margin:10px;
+	height:100px;
+	background-color:#fed;
+}
+#visual {
+	margin:10px;
+	height:200px;
+	background-color:#ec9;
+}
+#contents {
+	margin:10px;
+	height:300px;
+	background-color:#852;
+}
+#footer {
+	margin:10px;
+	height:100px;
+	background-color:#728;
+}
