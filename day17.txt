@@ -1,0 +1,22 @@
+[position] - 태그를 공중에 띄울 때 사용
+  - absolute : 부모태그를 기준으로 이동시키는 속성
+  - fixed : 브라우저에 고정시키는 속성
+  - static : position의 기본값
+  - relative : 
+
+left, right, top, bottom 
+z-index : position의 순서값을 변경
+
+- absolute와 fixed를 지정하는 순간 width가 사라진다.
+- 속성을 지정하고 제일 먼저 기준 좌표를 입력한다.
+
+
+
+
+
+
+
+
+
+
+
