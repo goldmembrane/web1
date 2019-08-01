@@ -1,0 +1,34 @@
+* {
+	margin:0; padding:0;
+}
+ul,ol,li {
+	list-style:none;
+}
+img {
+	border:none;
+}
+.list {
+	width:572px;
+	margin:100px auto;
+}
+.list li {
+	float:left;
+	margin:10px;
+	position:relative;
+}
+.list li a {}
+
+.rank {
+	position:absolute;
+	left:3px;
+	top:-2px;
+}
+.hot {
+	background:url(../img/ico_hot.png) no-repeat;
+	position:absolute;
+	width:56px;
+	height:56px;
+	right:-3px;
+	top:-3px;
+	text-indent:-9999px;
+}
