@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>background-size</title>
+		<style>
+			* {margin:0; padding:0;}
+			h1 {
+				margin:10px;
+				font-size:20px;
+			}
+			.box {
+				width:500px;
+				height:300px;
+				border:5px solid #000;
+				margin:10px;
+				margin-bottom:100px;
+				background:url(img01.jpg) no-repeat;
+			}
+			.box1 {background-size:auto;}
+			.box2 {background-size:300px;}
+			.box3 {background-size:400px 300px;}
+			.box4 {background-size:auto 200px;}
+			.box5 {background-size:50%;}
+			.box6 {background-size:auto 100%;}
+		</style>
+	</head>
+	<body>
+		<h1>1. auto : 원본 사이즈 그대로 화면에 표시</h1>
+		<div class="box box1"></div>
+		
+		<h1>2. 300px : 값이 하나만 주어지면 width값으로 설정되고, height는 auto값으로 설정
+						(이미지가 비율에 맞게 조절된다.)</h1>
+		<div class="box box2"></div>
+		
+		<h1>3. 400px 300px : width와 height값 두개 다 지정되었을 때, 비율이 맞지 않으면,
+								이미지가 찌그러질 수 있다.</h1>
+		<div class="box box3"></div>
+		
+		<h1>4. auto 200px : height를 기준으로 값 설정</h1>
+		<div class="box box4"></div>
+		
+		<h1>5. 50% : 부모태그의 속성의 비율을 따라간다.</h1>
+		<div class="box box5"></div>
+		
+		<h1>6. auto 100% : height의 값을 부모 속성의 비율을 따라간다.</h1>
+		<div class="box box6"></div>
+	</body>
+</html>
